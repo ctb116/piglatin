@@ -1,19 +1,20 @@
 //Backend
-var vowels = ["a", "e", "i", "o", "u"];
+var vowels = ["a", "e", "i", "o", "u", "y"];
 
 function firstVowel(string) {
-  // var firstStep;
+  var piglatin = " ";
+
     if (vowels.includes(string.charAt(0))) {
-      firstLetterVowel(string);
-      // alert("this is working");
+     piglatin = string + "way";
     } else {
-      alert("consonants");
+      alert("con con");
+      // consonants(string);
     }
 
-  function firstLetterVowel(string) {
-    // return (string + "way");
-    alert("hurray vowel");
-  }
+  // function consonants(string) {
+  //   alert("dawdadawdwa");
+  // }
+  console.log(piglatin);
 }
   // function consonants(string) {
   //   alert("You got a con son")
@@ -33,9 +34,11 @@ $(document).ready(function(){
 
   var userInput = $("input#inputText").val();
 
-  var result = firstVowel(userInput)
+  firstVowel(userInput)
 
-  $(".output").text(result);
+
+  // $(".output").text(piglatin);
+  // $(".output").text(con);
 
   });
 });
