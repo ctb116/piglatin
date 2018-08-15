@@ -2,13 +2,22 @@
 var vowels = ["a", "e", "i", "o", "u"];
 
 function firstVowel(string) {
-  // for (var i = 0; i < userInput.length; i++) {
+  // var firstStep;
     if (vowels.includes(string.charAt(0))) {
-      return true;
+      firstLetterVowel(string);
+      // alert("this is working");
     } else {
-      return false;
+      alert("consonants");
     }
+
+  function firstLetterVowel(string) {
+    // return (string + "way");
+    alert("hurray vowel");
   }
+}
+  // function consonants(string) {
+  //   alert("You got a con son")
+  // }
 
 // for (var index = 0; index = 1; index += 1) {
 //   var firstvowel = (userInput + "way");
